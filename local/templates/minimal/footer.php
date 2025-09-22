@@ -33,7 +33,7 @@
 
   <?php
   use Bitrix\Main\Page\Asset;
-  Asset::getInstance()->addJs(SITE_TEMPLATE_PATH . '/script.js');
+  Asset::getInstance()->addJs(SITE_TEMPLATE_PATH . '/script.js', true);
   ?>
 </body>
 </html>

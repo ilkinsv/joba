@@ -22,11 +22,6 @@ use Bitrix\Main\Page\Asset;
       <div class="logo">PC<span style="color:var(--yellow)">Remote</span></div>
 
       <nav aria-label="Главное меню">
-        <!--
-        Примечание для администратора:
-        Меню управляется через файлы в /local/templates/minimal/ .top.menu.php
-        Это стандартный способ управления меню в Bitrix.
-        -->
         <?$APPLICATION->IncludeComponent(
             "bitrix:menu",
             "top_menu",
