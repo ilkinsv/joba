@@ -56,8 +56,8 @@ $APPLICATION->SetTitle("1C Development Services — Minimal");
 		"FIELD_CODE" => array("NAME","PREVIEW_TEXT",""),
 		"FILTER_NAME" => "",
 		"HIDE_LINK_WHEN_NO_DETAIL" => "N",
-		"IBLOCK_ID" => "1", // Placeholder, user will need to set this
-		"IBLOCK_TYPE" => "services", // Placeholder, user will need to set this
+		"IBLOCK_ID" => "1", // <-- Укажите ID вашего инфоблока "Услуги"
+		"IBLOCK_TYPE" => "services", // <-- Укажите тип вашего инфоблока "Услуги"
 		"INCLUDE_IBLOCK_INTO_CHAIN" => "N",
 		"INCLUDE_SUBSECTIONS" => "Y",
 		"MESSAGE_404" => "",
@@ -126,8 +126,8 @@ $APPLICATION->SetTitle("1C Development Services — Minimal");
 		"FIELD_CODE" => array("NAME","PREVIEW_TEXT",""),
 		"FILTER_NAME" => "",
 		"HIDE_LINK_WHEN_NO_DETAIL" => "N",
-		"IBLOCK_ID" => "2", // Placeholder, user will need to set this
-		"IBLOCK_TYPE" => "cases", // Placeholder, user will need to set this
+		"IBLOCK_ID" => "2", // <-- Укажите ID вашего инфоблока "Кейсы"
+		"IBLOCK_TYPE" => "cases", // <-- Укажите тип вашего инфоблока "Кейсы"
 		"INCLUDE_IBLOCK_INTO_CHAIN" => "N",
 		"INCLUDE_SUBSECTIONS" => "Y",
 		"MESSAGE_404" => "",
@@ -184,8 +184,8 @@ $APPLICATION->SetTitle("1C Development Services — Minimal");
 	"bitrix:main.feedback",
 	"contact_form",
 	Array(
-		"EMAIL_TO" => "sale@1cdev.example", // Placeholder
-		"EVENT_MESSAGE_ID" => array("7"), // Placeholder
+		"EMAIL_TO" => "hello@pcremote.example", // <-- Укажите ваш email для получения писем
+		"EVENT_MESSAGE_ID" => array("7"), // <-- Укажите ID почтового события
 		"OK_TEXT" => "Спасибо, ваше сообщение принято.",
 		"REQUIRED_FIELDS" => array("NAME","EMAIL","MESSAGE"),
 		"USE_CAPTCHA" => "N"

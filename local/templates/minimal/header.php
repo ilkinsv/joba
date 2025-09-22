@@ -19,9 +19,14 @@ use Bitrix\Main\Page\Asset;
 
   <header>
     <div class="container nav">
-      <div class="logo">1C<span style="color:var(--yellow)">Dev</span></div>
+      <div class="logo">PC<span style="color:var(--yellow)">Remote</span></div>
 
       <nav aria-label="Главное меню">
+        <!--
+        Примечание для администратора:
+        Меню управляется через файлы в /local/templates/minimal/ .top.menu.php
+        Это стандартный способ управления меню в Bitrix.
+        -->
         <?$APPLICATION->IncludeComponent(
             "bitrix:menu",
             "top_menu",
@@ -39,7 +44,7 @@ use Bitrix\Main\Page\Asset;
         );?>
       </nav>
 
-      <button class="cta-primary" onclick="document.getElementById('contact-form')?.scrollIntoView({behavior:'smooth'})">Request Consultation</button>
+      <button class="cta-primary" onclick="document.getElementById('contact-form')?.scrollIntoView({behavior:'smooth'})">Связаться</button>
     </div>
   </header>
 
