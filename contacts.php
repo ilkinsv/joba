@@ -7,7 +7,7 @@ $APPLICATION->SetTitle("Контакты");
     <h1>Не знаете, с чего начать? Опишите ситуацию — мы подскажем, что делать.</h1>
     <h2>Работаем удалённо — 90% задач решаем без выезда. Остальное обсуждается.</h2>
 
-    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 48px; margin-top: 48px;">
+    <div class="contacts-grid" style="display: grid; grid-template-columns: 1fr 1fr; gap: 48px; margin-top: 48px;">
         <div>
             <h3>Офис</h3>
             <h4>Адрес: город Иваново, улица Красной Армии, 18/9</h4>

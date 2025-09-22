@@ -40,7 +40,32 @@ use Bitrix\Main\Page\Asset;
       </nav>
 
       <button class="cta-primary" onclick="document.getElementById('contact-form')?.scrollIntoView({behavior:'smooth'})">Связаться</button>
+      <button class="burger-button" aria-label="Открыть меню" aria-expanded="false">
+        <span class="burger-button-line"></span>
+        <span class="burger-button-line"></span>
+        <span class="burger-button-line"></span>
+      </button>
     </div>
   </header>
+
+  <div class="mobile-nav" aria-hidden="true">
+    <div class="mobile-nav-content">
+      <?$APPLICATION->IncludeComponent(
+            "bitrix:menu",
+            "top_menu", // We can reuse the same template if the structure is just a UL
+            Array(
+                "ALLOW_MULTI_SELECT" => "N",
+                "DELAY" => "N",
+                "MAX_LEVEL" => "1",
+                "MENU_CACHE_GET_VARS" => array(""),
+                "MENU_CACHE_TIME" => "3600",
+                "MENU_CACHE_TYPE" => "A",
+                "MENU_CACHE_USE_GROUPS" => "Y",
+                "ROOT_MENU_TYPE" => "top",
+                "USE_EXT" => "N"
+            )
+        );?>
+    </div>
+  </div>
 
   <main>

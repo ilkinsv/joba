@@ -33,4 +33,14 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     });
+
+    // Burger menu toggle
+    const burgerButton = document.querySelector('.burger-button');
+    if (burgerButton) {
+        burgerButton.addEventListener('click', function() {
+            document.body.classList.toggle('is-open');
+            const isExpanded = burgerButton.getAttribute('aria-expanded') === 'true';
+            burgerButton.setAttribute('aria-expanded', !isExpanded);
+        });
+    }
 });
